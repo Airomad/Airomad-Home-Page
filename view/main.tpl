@@ -16,26 +16,39 @@
             <section id="left">
 
             <div class="pure-u-4-24">
-                <ul class="pure-menu-list">
-                    <li class="pure-menu">
-                        <span class="icon dripicons-list"></span>
-                        Категория 1
-                        <button class="pure-menu-btn"><span class="icon dripicons-plus"></span></button>
-                    </li>
-                    <li class="pure-menu-item"><a href="#" class="pure-menu-link"><span class="icon dripicons-dot"></span>Подкатегория 1</a> </li>
-                    <li class="pure-menu-item"><a href="#" class="pure-menu-link"><span class="icon dripicons-dot"></span>Подкатегория 2</a></li>
-                    <li class="pure-menu-item"><a href="#" class="pure-menu-link"><span class="icon dripicons-dot"></span>Подкатегория 3</a></li>
 
-                    <li class="pure-menu">
-                        <span class="icon dripicons-list"></span>
-                        Категория 2
-                        <button class="pure-menu-btn"><span class="icon dripicons-plus"></span></button>
-                    </li>
-                    <li class="pure-menu-item"><a href="#" class="pure-menu-link"><span class="icon dripicons-dot"></span>Подкатегория 1</a> </li>
-                    <li class="pure-menu-item"><a href="#" class="pure-menu-link"><span class="icon dripicons-dot"></span>Подкатегория 2</a></li>
-                    <li class="pure-menu-item"><a href="#" class="pure-menu-link"><span class="icon dripicons-dot"></span>Подкатегория 3</a></li>
+                <?php if ($categories !== NULL && count($categories > 0)) : ?>
+                    <ul class="pure-menu-list">
 
-                </ul>
+                        <?php foreach ($categories as $cat) : ?>
+
+                            <div class="pure-menu">
+                                <span class="icon dripicons-list"></span>
+                                <?php echo $cat->name; ?>
+                                <button class="pure-menu-btn"><span class="icon dripicons-plus"></span></button>
+                            </div>
+
+                            <?php if ($cat->subcategories !== NULL) : ?>
+
+                                <?php foreach ($cat->subcategories as $subcat) : ?>
+
+                                    <li class="pure-menu-item">
+                                        <a href="#" class="pure-menu-link">
+                                            <span class="icon dripicons-dot"></span>
+                                            <?php echo $subcat->name; ?>
+                                        </a>
+                                    </li>
+                                    
+                                <?php endforeach; ?>
+
+                            <?php endif; ?>
+
+                        <?php endforeach; ?>
+
+                    </ul>
+
+                <?php endif; ?>
+
             </div>
 
             <section>

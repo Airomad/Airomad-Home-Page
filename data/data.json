@@ -1,0 +1,29 @@
+{
+    "categories" :
+    [
+        {
+            "name": "Some category",
+            "subcategories":
+            [
+                {
+                    "name": "Some subcat",
+                    "datafile": "1"
+                },
+                {
+                    "name": "Some subcat2",
+                    "datafile": "2"
+                }
+            ]
+        },
+        {
+            "name": "Some category 2",
+            "subcategories":
+            [
+                {
+                    "name": "Some other subcat",
+                    "datafile": "3"
+                }
+            ]
+        }
+    ]
+}
