@@ -66,17 +66,6 @@ pure-menu-active>.pure-menu-link, .pure-menu-link:focus{
     float: right;
 }
 
-.btn-round {
-    background-color: #171718;
-    border: none;
-    border-radius: 40px;
-    color: white;
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    float: right;
-}
-
 .section-right {
     min-height: 100%;
     position: absolute;
@@ -88,15 +77,29 @@ pure-menu-active>.pure-menu-link, .pure-menu-link:focus{
 }
 
 .card {
-    border: 1px solid grey;
-    margin: 2px;
-    padding: 5px;
+    margin: 4px;
+    padding: 8px;
+    height: 60px;
+    background-color: #30343c;
 }
 
-.img_template {
-    background: lime;
-    width: 30px;
-    height: 30px;
-    margin-right: 6px;
-    display: inline-block;
+.card-img {
+    background: #5f8742;
+    width: 60px;
+    height: 60px;
+    margin-left: -8px;
+    margin-top: -8px;
+    margin-bottom: 0px;
+    margin-right: 8px;
+    float: left;
+}
+
+.card-title {
+    font-size: 10pt;
+    padding-bottom: 5px;
+}
+
+.card-link {
+    font-size: 10pt;
+    color: #6ba6cf;
 }
