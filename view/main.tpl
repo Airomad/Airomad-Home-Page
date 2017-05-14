@@ -13,13 +13,17 @@
     <body>
 
         <div class="pure-g">
-            <section id="left">
 
-            <div class="pure-u-4-24">
+            <div class="pure-u-4-24 section-left">
 
                 <button class="btn-wide"><span class="icon dripicons-plus"></span> new category</button>
 
-                <?php if ($categories !== NULL && count($categories > 0)) : ?>
+                <div id="left-loading" class="loading-gears"></div>
+                <div id="categories-empty" class="empty hide">There are no categories!</div>
+
+                <div id="categories-content"></div>
+
+                <?php if (0) : ?>
                     <ul class="pure-menu-list">
 
                         <?php foreach ($categories as $cat) : ?>
@@ -53,20 +57,18 @@
 
             </div>
 
-            <section>
-
             <div id="right" class="pure-u-20-24 section-right">
                 <button class="btn-wide"><span class="icon dripicons-plus"></span> new bookmark</button>
 
-                <div id="right-loading" class="loading-gears hide"></div>
-                <div id="cards-empty" class="empty">There are no cards!</div>
+                <div id="right-loading" class="loading-gears"></div>
+                <div id="cards-empty" class="empty hide">There are no cards!</div>
 
                 <div id="cards-content"></div>
 
             </div>
         </div>
 
-    <script type="text/javascript" src="/view/js/bundler.js"></script>
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/view/js/main.js"></script>
     </body>
 </html>

@@ -79,6 +79,19 @@ pure-menu-active>.pure-menu-link, .pure-menu-link:focus{
     cursor: pointer;
 }
 
+.section-left {
+    min-height: 100%;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    padding: 0px;
+    margin: 0px;
+    background: #2b3d50;
+}
+
 .section-right {
     min-height: 100%;
     position: absolute;
