@@ -35,7 +35,7 @@
                                 <?php foreach ($cat->subcategories as $subcat) : ?>
 
                                     <li class="pure-menu-item">
-                                        <a href="#" class="pure-menu-link">
+                                        <a href="#" class="pure-menu-link" onclick="loadSubcategory(<?php echo $subcat->id; ?>)">
                                             <span class="icon dripicons-dot"></span>
                                             <?php echo $subcat->name; ?>
                                         </a>
@@ -55,33 +55,18 @@
 
             <section>
 
-            <div class="pure-u-20-24 section-right">
+            <div id="right" class="pure-u-20-24 section-right">
                 <button class="btn-wide"><span class="icon dripicons-plus"></span> new bookmark</button>
 
-                <?php $counter = 0; ?>
-                <?php foreach ($cards as $card) : ?>
+                <div id="right-loading" class="loading-gears hide"></div>
+                <div id="cards-empty" class="empty">There are no cards!</div>
 
-                <?php if ($counter % 3 == 0) : ?>
-                <div class="pure-g">
-                <?php endif; ?>
-
-                    <div class="pure-u-1-3">
-                        <div class="card">
-                            <div class="card-img">&nbsp;</div>
-                            <div class="card-title">Небольшое описание закладки Небольшое описание закладки Небольшое описание</div>
-                            <div class="card-link">https://somedomain.com</div>
-                        </div>
-                    </div>
-
-                <?php if (($counter - 2) % 3 == 0) : ?>
-                </div>
-                <?php endif; ?>
-
-                <?php $counter++; ?>
-                <?php endforeach; ?>
+                <div id="cards-content"></div>
 
             </div>
         </div>
 
+    <script type="text/javascript" src="/view/js/bundler.js"></script>
+    <script type="text/javascript" src="/view/js/main.js"></script>
     </body>
 </html>

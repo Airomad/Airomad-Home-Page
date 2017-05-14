@@ -7,11 +7,11 @@
             [
                 {
                     "name": "Some subcat",
-                    "datafile": "1"
+                    "id": "1"
                 },
                 {
                     "name": "Some subcat2",
-                    "datafile": "2"
+                    "id": "2"
                 }
             ]
         },
@@ -21,7 +21,7 @@
             [
                 {
                     "name": "Some other subcat",
-                    "datafile": "3"
+                    "id": "3"
                 }
             ]
         }
