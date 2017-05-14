@@ -1,5 +1,6 @@
 $(document).ready(function() {
         loadCategories()
+        loadSubcategory(1)
 });
 
 function loadSubcategory(id) {
@@ -85,12 +86,13 @@ function loadCategories() {
                         if (cat.subcategories.length > 0) {
                             cat.subcategories.forEach(function(subcat) {
                                 html += '<li class="pure-menu-item">';
-                                html += '<a href="#" class="pure-menu-link" onclick="loadSubcategory(' + subcat.id + ')">';
+                                html += '<a id="subcategory-' + subcat.id + '" href="#" class="pure-menu-link" onclick="loadSubcategory(' + subcat.id + ')">';
                                 html += '<span class="icon dripicons-dot"></span>' + subcat.name + '</a></li>';
                             })
                         }
                     })
                     div.html(html);
+                    $("#subcategory-1").focus()
                 } else {
                     $("#categories-empty").removeClass("hide");
                     div.html(categories.data);

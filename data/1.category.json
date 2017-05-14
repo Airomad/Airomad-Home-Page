@@ -1,32 +1,12 @@
 {
     "cards" : [
         {
-            "name" : "some card title here",
-            "link": "http://example.com"
+            "name" : "Google! You know it.",
+            "link": "http://google.com"
         },
         {
-            "name" : "some card title here",
-            "link": "http://example.com"
-        },
-        {
-            "name" : "some card title here",
-            "link": "http://example.com"
-        },
-        {
-            "name" : "some card title here",
-            "link": "http://example.com"
-        },
-        {
-            "name" : "some card title here",
-            "link": "http://example.com"
-        },
-        {
-            "name" : "some card title here",
-            "link": "http://example.com"
-        },
-        {
-            "name" : "some card title here",
-            "link": "http://example.com"
+            "name" : "My Github URL",
+            "link": "https://github.com/Airomad"
         }
     ]
 }

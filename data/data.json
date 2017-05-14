@@ -6,21 +6,21 @@
             "subcategories":
             [
                 {
-                    "name": "Some subcat",
+                    "name": "First subcat",
                     "id": "1"
                 },
                 {
-                    "name": "Some subcat2",
+                    "name": "Second subcat",
                     "id": "2"
                 }
             ]
         },
         {
-            "name": "Some category 2",
+            "name": "Some other category",
             "subcategories":
             [
                 {
-                    "name": "Some other subcat",
+                    "name": "First subcat",
                     "id": "3"
                 }
             ]
