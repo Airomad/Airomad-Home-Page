@@ -17,6 +17,8 @@
 
             <div class="pure-u-4-24">
 
+                <button class="btn-wide"><span class="icon dripicons-plus"></span> new category</button>
+
                 <?php if ($categories !== NULL && count($categories > 0)) : ?>
                     <ul class="pure-menu-list">
 
@@ -38,7 +40,7 @@
                                             <?php echo $subcat->name; ?>
                                         </a>
                                     </li>
-                                    
+
                                 <?php endforeach; ?>
 
                             <?php endif; ?>
@@ -54,6 +56,7 @@
             <section>
 
             <div class="pure-u-20-24 section-right">
+                <button class="btn-wide"><span class="icon dripicons-plus"></span> new bookmark</button>
 
                 <?php $counter = 0; ?>
                 <?php foreach ($cards as $card) : ?>
