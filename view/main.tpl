@@ -16,7 +16,7 @@
 
             <div class="pure-u-4-24 section-left">
 
-                <button class="btn-wide"><span class="icon dripicons-plus"></span> new category</button>
+                <button class="btn-wide" id="new-category-btn"><span class="icon dripicons-plus"></span> new category</button>
 
                 <div id="left-loading" class="loading-gears"></div>
                 <div id="categories-empty" class="empty hide">There are no categories!</div>
@@ -67,6 +67,21 @@
 
             </div>
         </div>
+
+    <!-- The Modal -->
+    <div id="new-category" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                Add new category
+            </div>
+            <div class="modal-body">
+                Category name:
+                <br><br>
+                <input type="text">
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/view/js/main.js"></script>
